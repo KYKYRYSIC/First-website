@@ -85,6 +85,10 @@ body {
   text-align: center;
 }
 
+.button:hover {
+  transform: scale(1.05);
+}
+
 .about__heading {
   max-width: 820px;
 }
@@ -183,10 +187,6 @@ body {
 
 .header__content {
   margin-right: 30px;
-}
-
-.button:hover {
-  transform: scale(1.05);
 }
 
 .header__content-buttons {
@@ -1427,10 +1427,12 @@ body {
   .footer__inner {
     display: inline-block;
   }
+
   .footer__inner-right {
     margin-left: 0px;
     margin-top: 60px;
   }
+
   /* ================================= ====================================== */
 }
 
@@ -1520,4 +1522,168 @@ body {
   }
 
   /* ================================= ====================================== */
+}
+
+
+
+/* =================================Tack Trecker====================================== */
+/* =================================Tack Trecker====================================== */
+.header__top-inner-task {}
+
+.header__task {}
+
+.task__buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task__buttons-add {
+  display: inline-block;
+  line-height: 64px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 40px;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #FF6433;
+  white-space: nowrap;
+  transition: .3s;
+  max-width: 203px;
+  text-align: center;
+}
+
+.task__buttons-add:hover {
+  transform: scale(2.05);
+}
+
+.task__buttons-filters {
+  display: flex;
+}
+
+.task__buttons-filter {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 175%;
+  transition-duration: 0.2s;
+  margin-right: 20px;
+}
+
+.task__buttons-filter:hover {
+  color: #FF6433;
+  transform: scale(1.05);
+}
+
+.task__buttons-filter--active {
+  color: #FF6433;
+}
+
+.task__filter-btn {}
+
+.task__content {}
+
+.task__content-box {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 40px 40px;
+  color: #fff;
+  border-radius: 62px;
+  background-color: #FF6433;
+  transition: .3s;
+  width: 400px;
+  height: 600px;
+}
+
+.task__box-heading {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 131%;
+  letter-spacing: -0.03em;
+  color: rgb(229, 255, 0);
+}
+
+.task__box-title {
+  margin-top: 44px;
+}
+
+.task__box-inf {
+  margin-top: auto;
+}
+
+.task__form {
+  display: flex;
+  flex-direction: column;
+  padding: 18px 18px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  z-index: 100;
+  min-width: 320px;
+  transform: translateX(100%);
+  transition: all .3s;
+}
+
+.task__form--show {
+  transform: translateX(0%);
+  visibility: visible;
+  opacity: 1;
+}
+.task__form-header {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 140%;
+  letter-spacing: -0.03em;
+  max-width: 463px;
+  margin-bottom: 20px;
+}
+.task__form-label {
+  margin-top: 20px;
+}
+
+.task__form-input {
+  transition: all .20s;
+  border-radius: 20px;
+  width: 624px;
+  height: 72px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 175%;
+  color: var(--black);
+  box-sizing: border-box;
+  padding: 0 40px;
+  background-color: #f2f2f2;;
+}
+.task__form-textarea {
+  height: 216px;
+  padding: 10px 40px;
+}
+.task__form-input:focus{
+border-bottom: 4px solid #000000;
+}
+.task__buttons-save {
+  display: inline-block;
+  margin-left: auto;
+  margin-top: 20px;
+  line-height: 64px;
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.5px;
+  padding: 0 40px;
+  color: #fff;
+  border-radius: 12px;
+  background-color: #FF6433;
+  white-space: nowrap;
+  transition: .3s;
+  max-width: 203px;
+  text-align: center;
+}
+.task__buttons-save:hover {
+  transform: scale(1.05);
 }

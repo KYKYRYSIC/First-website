@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge=">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Figma1</title>
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="overlay overlay--show"></div>
+    <header id="home" class="header">
+      <a class="burger" href="#">
+        <span></span>
+      </a>
+      <div class="header__top header__top--open">
+        <div class="container">
+          <div class="header__top-inner">
+            <div class="header__logo logo">
+              <img src="/images/logo/Logo.svg" alt="logo">
+            </div>
+            <nav class="header__nav">
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="task.html">Task Tracker</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="index.html">Home</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#about">About us</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#services">Services</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#blog">Blog</a>
+                </li>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#contact">Contact</a>
+                </li>
+                <img class="header__nav-line" src="/images/Line.svg" alt="Line">
+              </ul>
+            </nav>
+            <div class="header__user-nav">
+              <img class="header__user-img" src="/images/Assistance Icon.svg" alt="Assistance">
+              <div class="header__user-text">Road Assistance
+                <p class="header__user-number">1800 265 24 52</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="header__body">
+        <div class="container">
+          <div class="header__top-inner-task">
+            <div class="header__main-task">
+              <div class="header__task">
+                <div class="task__buttons">
+                  <a href="#" class="task__buttons-add">Add task</a>
+                  <audio id="hover-sound" src="/sound/zvuk-vzryva.mp3"></audio>
+                  <form class="task__form">
+                    <div class="task__form-header header">
+                      Add your task
+                    </div>
+                    <label class="task__form-label" for="task__form-input">
+                      <input class="task__form-input" type="text" placeholder="Add a title">
+                    </label>
+                    <label class="task__form-label" for="task__form-input">
+                      <input class="task__form-date task__form-input" type="datetime-local">
+                    </label>
+                    <label class="task__form-label" for="task__form-input">
+                      <textarea class="task__form-textarea task__form-input" type="text" placeholder="Add a description"></textarea>
+                    </label>
+                    <a href="#" class="task__buttons-save">Save</a>
+                  </form>
+                  <ul class="task__buttons-filters">
+                    <li class="task__buttons-filter">
+                      <a class="task__filter-btn" href="#">All</a>
+                    </li>
+                    <li class="task__buttons-filter">
+                      <a class="task__filter-btn" href="#">Active</a>
+                    </li>
+                    <li class="task__buttons-filter">
+                      <a class="task__filter-btn" href="#">Completed</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="task__content">
+                  <div class="task__content-box">
+                    <div class="task__box-heading">Название</div>
+                    <div class="task__box-title">Текст</div>
+                    <div class="task__box-inf">Время</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script>
+  Fancybox.bind('[data-fancybox="button--empty"]', {
+
+  });
+</script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/task.js"></script>
+
+</html>

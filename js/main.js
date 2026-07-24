@@ -1,6 +1,6 @@
 $(function (){
 
-  var  mixer = mixitup(' .blog__list')
+  var mixer = mixitup('.blog__list')
 
   $('.blog__button').on('click', function (){
     $('.blog__button').removeClass('blog__button--active')
@@ -43,5 +43,9 @@ $(function (){
     e.preventDefault()
     $('.header__top').toggleClass('header__top--open')
     $('.overlay').toggleClass('overlay--show')
-  })
 })
+})
+
+
+
+
