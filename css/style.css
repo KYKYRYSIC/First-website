@@ -1581,7 +1581,13 @@ body {
 
 .task__filter-btn {}
 
-.task__content {}
+/* =================================Tack Trecker Content(Card)====================================== */
+.task__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+}
 
 .task__content-box {
   margin-top: 40px;
@@ -1591,30 +1597,65 @@ body {
   font-size: 18px;
   letter-spacing: 0.5px;
   padding: 40px 40px;
-  color: #fff;
-  border-radius: 62px;
-  background-color: #FF6433;
+  color: #212121;
+  border-radius: 40px;
+  background-color: #f4623a;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: .3s;
   width: 400px;
-  height: 600px;
+  position: relative;
 }
 
-.task__box-heading {
+.task__box-head {
   font-weight: 800;
   font-size: 40px;
   line-height: 131%;
   letter-spacing: -0.03em;
-  color: rgb(229, 255, 0);
+  color: #fffb00;
+  display: flex;
+  justify-content: space-between;
+}
+
+.task__box-icons {
+  align-items: center;
+  display: flex;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.task__box-icons.show__icons {
+  opacity: 1;
+}
+
+.task__box-icons--btnbox {
+  display: flex;
+}
+
+.icon {
+  margin-right: 1px;
+  transition: all .5s;
+  width: 40px;
+  height: 40px;
+}
+
+.icon:hover {
+  border-radius: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.icon:hover path {
+  fill: #000;
+  transition: all .5s;
 }
 
 .task__box-title {
   margin-top: 44px;
+  margin-bottom: 44px;
+  white-space: normal;
 }
 
-.task__box-inf {
-  margin-top: auto;
-}
-
+/* =================================Tack Trecker Form====================================== */
 .task__form {
   display: flex;
   flex-direction: column;
@@ -1635,6 +1676,7 @@ body {
   visibility: visible;
   opacity: 1;
 }
+
 .task__form-header {
   font-weight: 700;
   font-size: 48px;
@@ -1643,6 +1685,7 @@ body {
   max-width: 463px;
   margin-bottom: 20px;
 }
+
 .task__form-label {
   margin-top: 20px;
 }
@@ -1658,15 +1701,19 @@ body {
   color: var(--black);
   box-sizing: border-box;
   padding: 0 40px;
-  background-color: #f2f2f2;;
+  background-color: #f2f2f2;
+  ;
 }
+
 .task__form-textarea {
   height: 216px;
   padding: 10px 40px;
 }
-.task__form-input:focus{
-border-bottom: 4px solid #000000;
+
+.task__form-input:focus {
+  border-bottom: 4px solid #000000;
 }
+
 .task__buttons-save {
   display: inline-block;
   margin-left: auto;
@@ -1684,6 +1731,95 @@ border-bottom: 4px solid #000000;
   max-width: 203px;
   text-align: center;
 }
+
 .task__buttons-save:hover {
   transform: scale(1.05);
+}
+
+/* =================================Tack Trecker Form-Menu====================================== */
+
+.task__box-btnp{
+  display: none;
+}
+
+.task__box-icons.show__icons-doted .task__box-btnp:hover {
+  color: #FF6433;
+  cursor: pointer;  
+}
+
+.task__box-btnbox--menus {
+  display: none;
+}
+
+.task__box-icons.show__icons-doted .task__box-btnp {
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: black;
+  margin-right: 3px;
+  transition: .3s;
+  display: block;
+}
+
+.task__box-icons.show__icons-doted .task__box-btnbox--menus {
+  display: block;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 131%;
+  letter-spacing: 0.5px;
+  color: #212121;
+  justify-self: flex-start;
+  margin-left: 5px;
+}
+
+.task__box-icons.show__icons-doted .task__box-heading--dot {
+  display: none;
+}
+.task__box-doted--menu {
+  display: none;
+}
+
+.task__box-icons.show__icons-doted .task__box-doted--menu {
+  background-color: #fff;
+  position: absolute;
+  right: 0;
+  top: 40px;  
+  width: 100px;
+  max-height: 125px;
+  height: 100%;
+  justify-items: end;
+  border-radius: 12px 0 0 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: .3s;
+  display: block;
+}
+
+.task__box-icons.show__icons-doted .task__box-icons--btnboxq {
+  display: none;
+}
+
+.task__box-icons--btnboxq {
+  display: block;
+} 
+
+.task__box-icons--btnbox {
+  display: flex;
+  align-items: center;
+}
+
+.task__btnbox-menu--items {
+  margin-top: 5px;
+  transition-duration: 0.3s;
+}
+
+.task__btnbox-menu--items:hover {
+  color: #FF6433;
+}
+
+.task__box-heading--dot---dot {
+  display: none;
+}
+
+.add__marked{
+  fill: black;
 }

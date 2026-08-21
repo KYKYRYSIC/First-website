@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
-  <title>Figma1</title>
+  <title>Task Tracker</title>
 </head>
 
 <body>
@@ -78,28 +78,83 @@
                       <input class="task__form-date task__form-input" type="datetime-local">
                     </label>
                     <label class="task__form-label" for="task__form-input">
-                      <textarea class="task__form-textarea task__form-input" type="text" placeholder="Add a description"></textarea>
+                      <textarea class="task__form-textarea task__form-input" type="text"
+                        placeholder="Add a description"></textarea>
                     </label>
                     <a href="#" class="task__buttons-save">Save</a>
                   </form>
                   <ul class="task__buttons-filters">
                     <li class="task__buttons-filter">
-                      <a class="task__filter-btn" href="#">All</a>
+                      <a class="task__filter-btn--all" href="#">All</a>
                     </li>
                     <li class="task__buttons-filter">
-                      <a class="task__filter-btn" href="#">Active</a>
-                    </li>
-                    <li class="task__buttons-filter">
-                      <a class="task__filter-btn" href="#">Completed</a>
+                      <a class="task__filter-btn--marked" href="#">Marked</a>
                     </li>
                   </ul>
                 </div>
+                
                 <div class="task__content">
-                  <div class="task__content-box">
-                    <div class="task__box-heading">Название</div>
+                  <!-- <div class="task__content-box">
+                    <div class="task__box-head">
+                      <h1 class="task__box-heading">Название</h1>
+                      <div class="task__box-icons show__icons show__icons-doted">
+                        <button href="" class="task__box-icons--btnboxq">
+                          <p class="task__box-btnp">Marked</p>
+                          <svg class="task__box-heading--mark icon" xmlns="http://www.w3.org/2000/svg" height="28px"
+                            viewBox="0 -960 960 960" width="28px" fill="#e3e3e3">
+                            <path
+                              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                          </svg>
+                        </button>
+                        <button href="" class="task__box-icons--btnboxq">
+                          <svg class="task__box-heading--dot icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                            <path
+                              d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                          </svg>
+                        </button>
+                        <div class="task__box-doted--menu">
+                        <button href="" class="task__box-icons--btnbox">
+                          <p class="task__box-btnp">Marked</p>
+                          <svg class="task__box-heading--mark icon" xmlns="http://www.w3.org/2000/svg" height="28px"
+                            viewBox="0 -960 960 960" width="28px" fill="#e3e3e3">
+                            <path
+                              d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z" />
+                          </svg>
+                        </button>
+                        <button href="" class="task__box-icons--btnbox">
+                          <svg class="task__box-heading--dot icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                            <path
+                              d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                          </svg>
+                        </button>
+                        <ul class="task__box-btnbox--menus">
+                          <li class="task__btnbox-menu--items">
+                            <button href="" class="task__box-icons--btnbox">
+                          <svg class="task__box-heading--dot---dot icon" xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                            <path
+                              d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z" />
+                          </svg>
+                        </button>
+                          </li>
+                          <li class="task__btnbox-menu--items">
+                            <a class="task__btnbox-menu--item" href="#">Delete</a>
+                          </li>
+                          <li class="task__btnbox-menu--items">
+                            <a class="task__btnbox-menu--item" href="#">Coppy</a>
+                          </li>
+                          <li class="task__btnbox-menu--items">
+                            <a class="task__btnbox-menu--item" href="#">Change</a>
+                          </li>
+                        </ul>
+                        </div>
+                      </div>
+                    </div>
                     <div class="task__box-title">Текст</div>
                     <div class="task__box-inf">Время</div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>
