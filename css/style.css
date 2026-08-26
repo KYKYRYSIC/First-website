@@ -1656,6 +1656,14 @@ body {
 }
 
 /* =================================Tack Trecker Form====================================== */
+.task__content-box {
+  margin-right: 5px;
+} 
+
+.task__content-box:nth-child(3n) {
+  margin-right: 0px;
+} 
+
 .task__form {
   display: flex;
   flex-direction: column;
@@ -1735,7 +1743,9 @@ body {
 .task__buttons-save:hover {
   transform: scale(1.05);
 }
-
+.task__box-heading {
+  word-break: break-all;
+}
 /* =================================Tack Trecker Form-Menu====================================== */
 
 .task__box-btnp{
